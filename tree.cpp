@@ -57,3 +57,35 @@ int main()
    cout<<odd<<endl;  
    return 0;
 }
+
+
+
+starting to ending odd
+#include <iostream>
+
+using namespace std;
+ void findOddNumbers(int StartingNumber,int EndingNumber){
+
+      for(int i=StartingNumber;i<EndingNumber;i++){
+          if (!(i%2==0)){
+        cout<<i<<"";
+          }
+          cout<<endl;
+       }
+      }
+    
+int main()
+{
+   int StartingNumber;
+   int EndingNumber;
+  cout<<"Enter the starting number;" <<endl;
+  cin>>StartingNumber; 
+  cout<<"Enter the ENDING number;" <<endl;
+  cin>>EndingNumber; 
+   cout<<endl;
+  findOddNumbers(StartingNumber,EndingNumber);
+   return 0;
+}
+
+
+
