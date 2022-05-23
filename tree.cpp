@@ -1,52 +1,26 @@
 
-#include <windows.h>
-#include <GL/glut.h>
+#include <iostream>
 
+using namespace std;
 
-void initGL() {
-
-	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-}
-
-void display() {
-	glClear(GL_COLOR_BUFFER_BIT);
-
-
-///TREE01///
-    glBegin(GL_POLYGON);
-    glColor3ub(102, 51, 0);
-
-    glVertex2f(0.91f, -0.1f);
-    glVertex2f(0.91f, -0.7f);
-    glVertex2f(0.94f, -0.7f);
-    glVertex2f(0.94f, -0.1f);
-    glEnd();
-///LEAF01///
-    glBegin(GL_POLYGON);
-    glColor3ub(204, 204, 0 );
-    glVertex2f(0.80f, -0.1f);
-    glVertex2f(1.05f, -0.1f);
-    glVertex2f(0.925f, 0.2f);
-    glEnd();
-    glBegin(GL_POLYGON);
-    glColor3ub(204, 204, 0 );
-    glVertex2f(0.85f, 0.1f);
-    glVertex2f(1.00f, 0.1f);
-    glVertex2f(0.925f, 0.4f);
-    glEnd();
-
-
-	glFlush();
-}
-
-
-int main(int argc, char** argv) {
-	glutInit(&argc, argv);
-	glutCreateWindow("Vertex, Primitive & Color");
-	glutInitWindowSize(320, 320);
-	glutInitWindowPosition(50, 50);
-	glutDisplayFunc(display);
-	initGL();
-	glutMainLoop();
-	return 0;
+int main()
+{
+   int arr[]={1,5,8,10,55,9,44};
+   int n;
+   n=sizeof(arr)/sizeof(arr[0]);
+   cout<<n;
+   //return 0;
+    cout<<endl;
+  cout<<"print the value in ascending order"<<endl;
+   for(int i=0;i<n;i++)
+   {
+    cout << arr[i]<<" ";
+   }
+   cout<<endl;
+     cout<<"print the value in descending order"<<endl;
+   for(int i=n-1;i>=0;i--)
+   {
+    cout << arr[i]<<" ";
+   }
+   return 0;
 }
