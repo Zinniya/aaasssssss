@@ -86,6 +86,40 @@ int main()
   findOddNumbers(StartingNumber,EndingNumber);
    return 0;
 }
+   
+
+
+lab 2
+   #include <iostream>
+
+using namespace std;
+int findPrimeNumbers(int n)
+{
+   int count =0;
+   for(int i=1;i<=n;i++)
+   {
+      if(n%i==0){
+         count++;
+      }
+   }
+}
+
+int main()
+{
+ int n;
+ cout<<"enter a number"<<endl;
+ cin>>n;
+ int prime =findPrimeNumbers(n);
+ if (prime ==2)
+ {
+    cout<<"its a prime number"<<endl;
+
+ }
+ else{
+   cout <<"Error! it,s not a prime number"<<endl;
+ }
+ return 0;
+}
 
 
 
