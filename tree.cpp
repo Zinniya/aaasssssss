@@ -90,6 +90,9 @@ int main()
 
 
 lab 2
+
+   
+   
    #include <iostream>
 
 using namespace std;
@@ -102,6 +105,7 @@ int findPrimeNumbers(int n)
          count++;
       }
    }
+   return count;
 }
 
 int main()
@@ -120,6 +124,7 @@ int main()
  }
  return 0;
 }
+
 
 
 
