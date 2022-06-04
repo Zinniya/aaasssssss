@@ -125,6 +125,32 @@ int main()
  return 0;
 }
 
+lab 03
+   #include <iostream>
 
+using namespace std;
+
+int main() {
+   int n;
+   cout<<"please enter the size of the array"<<endl;
+   cin>>n;
+   int arr[n];
+   cout<<"pleaser enter the element for the array:"<<endl;
+   for (int i=0;i<n ;i++){
+       cin>>arr[i];
+       
+   }
+   int s;
+   cout<<"please choose the element to search"<<endl;
+   cin>>s;
+   int counter =0;
+   for (int i=0;i<n;i++){
+       if (arr[i]==s){
+           counter ++;
+       }
+   }
+   cout<<"the element "<<s<<" is ocurred at "<<counter<<" times";
+   return 0;
+}
 
 
