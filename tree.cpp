@@ -153,4 +153,34 @@ int main() {
    return 0;
 }
 
+ lab3
+ // Online C++ compiler to run C++ program online
+#include <iostream>
 
+using namespace std;
+struct StudentInformation{
+  int studentId;
+  float cgpa;
+  int credits;
+}s[5];
+int main() {
+    cout<<"pleasr enter the student information:"<<endl;
+    for(int i=0;i<5;i++){
+          cout<<"please enter the student id of student"<<endl;
+        cin>>s[i].studentId;
+        cout<<"please enter the cgpa of student"<<endl;
+          cin>>s[i].cgpa;
+           cout<<"please enter the credits of student"<<endl;
+            cin>>s[i].credits;
+            
+    }
+    
+    for (int i=0;i<5;i++){
+        if (s[i].cgpa>=3.75&&s[i].credits>=50){
+            cout<<s[i].studentId<<endl;
+            
+            
+        }
+    }
+    return 0;
+} 
