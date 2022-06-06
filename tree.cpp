@@ -184,3 +184,54 @@ int main() {
     }
     return 0;
 } 
+
+
+
+
+
+
+
+Lab4
+
+
+
+
+
+
+#include <iostream>
+
+using namespace std;
+#define row 3
+#define column 4
+
+int main()
+{
+  int matrix[row][column];
+  int transposeMatrix[column][row];
+  cout<<"intput matrix"<<endl;
+
+  for (int i=0;i<row;i++){
+    for (int j=0;j<column;j++){
+        cin>>matrix[i][j];
+    }
+  }
+    for (int i=0;i<row;i++){
+    for (int j=0;j<column;j++){
+            transposeMatrix[j][i]=matrix[i][j];
+    }
+    }
+
+  cout <<"Transpose Matrix"<<endl;
+
+  for (int i=0;i<column;i++){
+    for (int j=0;j<row;j++){
+  cout<<transposeMatrix[i][j]<<" ";
+    }
+    cout<<endl;
+  }
+  return 0;
+
+
+}
+
+
