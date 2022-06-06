@@ -233,5 +233,46 @@ int main()
 
 
 }
+ example 
+ #include <iostream>
 
+using namespace std;
+#define size 5
+
+class stack{
+private:
+    int top;
+    int stack [size];
+    
+public:
+    stack(){
+    top=-1;
+    }
+    void push (int number){
+    if (top==size-1)
+         cout<<"full can not add"<<endl;
+        
+         }
+         else{
+            top++;
+            stack [top]=number;
+            cout<<"the number"<<number<<"is sucessfully added to the stack"<<endl;
+            
+         }
+    
+    void pop (){
+  if (top==-1){
+    cout<<" stack is empo
+  }  
+    
+    
+    
+    
+    }
+    
+    
+    
+    }
+
+};
 
