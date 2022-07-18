@@ -333,9 +333,9 @@ int main() {
 2nd 
    
    
-   #include <iostream>
+ #include <iostream>
 using namespace std;
-int binarySearch(int arr,int low,int high,int s){
+int binarySearch(int arr[],int low,int high,int s){
 
 while(low<=high){
     int mid =(low+high)/2;
@@ -346,9 +346,9 @@ while(low<=high){
         low=mid+1;
     }
     else{
-        high=mid-1
+        high=mid-1;
         }
-    }
+        }
     return -1;
 }
 int main() {
