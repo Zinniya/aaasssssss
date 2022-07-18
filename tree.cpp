@@ -276,3 +276,55 @@ public:
 
 };
 
+
+
+
+
+
+
+
+
+
+Final::::::
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int linearSearch(int arr[],int n,int x){
+        for (int i=0;i<n;i++){
+            if(arr[i]==x){
+                return i;
+            }
+        }
+        return -1;
+}
+
+
+
+
+
+
+
+int main() {
+    int n;
+    cout<<"Please enter the array sise"<<endl;
+    cin >> n;
+    int arr[n];
+       cout<<"Please enter the array element"<<endl;
+    for (int i=0;i<n;i++){
+        cin>>arr [i];
+
+    }
+    int s;
+      cout<<"Element to search"<<endl;
+      cin>> s;
+      int loc=linearSearch(arr,n,s);
+      if (loc==-1){
+      cout<<"value is not found"<<endl;
+
+      }
+    else{
+        cout<<"value is found at index ::        "<< loc<<endl;
+    }
+}
+
