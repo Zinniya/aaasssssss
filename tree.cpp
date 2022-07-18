@@ -328,3 +328,50 @@ int main() {
     }
 }
 
+
+
+2nd 
+   
+   
+   #include <iostream>
+using namespace std;
+int binarySearch(int arr,int low,int high,int s){
+
+while(low<=high){
+    int mid =(low+high)/2;
+    if(arr[mid]==s){
+        return mid;
+        }
+    else if(arr[mid]<s){
+        low=mid+1;
+    }
+    else{
+        high=mid-1
+        }
+    }
+    return -1;
+}
+int main() {
+    int n;
+    cout<<"Please enter the array sise"<<endl;
+    cin >> n;
+    int arr[n];
+       cout<<"Please enter the array element"<<endl;
+    for (int i=0;i<n;i++){
+        cin>>arr [i];
+
+    }
+    int s;
+      cout<<"Element to search"<<endl;
+      cin>> s;
+      int loc= binarySearch(arr,0,n-1,s);
+      if (loc==-1){
+      cout<<"value is not found"<<endl;
+
+      }
+    else{
+        cout<<"value is found at index :: "<<loc<<endl;
+    }
+    return 0;
+}
+
